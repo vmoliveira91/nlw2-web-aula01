@@ -19,8 +19,6 @@ function Landing() {
         api.get('connections').then(response => {
             const { total } = response.data;
 
-            console.log(total);
-
             setTotalConnections(total);
         })
     }, []);
